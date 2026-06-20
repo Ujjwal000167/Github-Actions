@@ -2,7 +2,7 @@ name: auto linter
 
 on:
   push: 
-    paths: "*.yml"
+    paths: "*.py"
     #anything ends with .py , when pushed then it start .
 
 jobs:
