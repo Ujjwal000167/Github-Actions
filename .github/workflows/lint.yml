@@ -11,6 +11,11 @@ jobs:
     steps:
       - name: Checkout/clone the code
         uses: actions/checkout@v7
+
+      - name: installing python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
         #uses is a prebuild action that clone the current branch to runner
         #this step clone the code in container , we use use because there are any repo so ints difficult to give url every time(git clone http//;github........)
       - name: install linter tool of python
