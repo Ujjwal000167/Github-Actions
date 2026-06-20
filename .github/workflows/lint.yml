@@ -6,7 +6,7 @@ on:
     #anything ends with .py , when pushed then it start
 
 jobs:
-  code:
+  code-linting:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout/clone the code
@@ -15,3 +15,5 @@ jobs:
         #this step clone the code in container , we use use because there are any repo so ints difficult to give url every time(git clone http//;github........)
       - name: install linter tool of python
         run: pip install ruff
+      - name: run ruff to check
+        run: ruff check .
