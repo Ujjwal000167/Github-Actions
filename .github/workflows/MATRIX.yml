@@ -6,9 +6,10 @@ jobs:
     strategy:
       matrix:
         os:
-          - ubuntu-latest
-          - window-latest
-    runs-on: ${{matrix.os}}
+          - ubuntu
+          - window
+        
+    runs-on: ${{matrix.os}}-latest
     steps:
       - name: cheking os
         run: echo "running ${{matrix.os}}"
