@@ -1,0 +1,10 @@
+name: practise
+on: 
+   workflow_dispatch: 
+
+jobs:
+   runs_on: ubuntu-latest
+   steps:
+      - name: code checkout
+        run: echo "running"
+ 
