@@ -1,0 +1,9 @@
+name: tryinh push action
+on:
+  push:
+jobs:
+  trying:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checking for normal push not specific
+        run: echo "normal commit also run worflow not just specific"
