@@ -2,7 +2,8 @@ name: practise
 on: 
    workflow_dispatch: 
 
-jobs:
+jobs: 
+  hello: 
    runs-on: ubuntu-latest
    steps:
       - name: code checkout
