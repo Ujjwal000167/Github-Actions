@@ -1,0 +1,14 @@
+name: trying matrix
+on:
+  workflow_dispatch: 
+jobs:
+  naming:
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+          - window-latest
+    runs-on: ${{matrix.os}}
+    steps:
+      - name: cheking os
+        run: echo "running ${{matrix.os}}"
